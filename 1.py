@@ -1,11 +1,5 @@
-a = 2
-b = 3
-print(a+b)
-
-
-print('Test_VSCODE')
-print('fffff')
-print('zalupa')
-
-a = list(1,2,3,4,5)
-print(a)
+import requests  
+url = 'https://api.opendota.com/api/matches/5905070268'  
+response = requests.get(url)  
+data = response.json()  
+print(data)  
